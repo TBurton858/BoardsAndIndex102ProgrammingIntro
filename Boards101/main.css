@@ -31,8 +31,11 @@ footer
 
 #memeImage
 {
+    position: absolute; /*will allow us to move image*/
     margin-right: 200px;
     width: 400px;
+    left: 0px;
+    top: 300px;
 }
 
 h1
