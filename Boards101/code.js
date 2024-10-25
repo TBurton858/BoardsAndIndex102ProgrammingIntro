@@ -3,6 +3,9 @@ var intervalID = 0
 //Will move image
 function moveImage()
 {
+    document.getElementById("startButton").disabled = true;
+    document.getElementById("stopButton").disabled = false;
+
     var image = document.getElementById("memeImage");
 
     var oldX = 0;
@@ -34,6 +37,9 @@ function moveImage()
 //Will stop image
 function stopImage()
 {
+    document.getElementById("startButton").disabled = false;
+    document.getElementById("stopButton").disabled = true;
+
     //Clear interval
     clearInterval(intervalID);
 }
